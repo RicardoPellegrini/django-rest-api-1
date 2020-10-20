@@ -14,7 +14,7 @@ curso_atualizado = {
 # # Verificando se curso existe com id = 3
 # curso = request.get(url=f'{url_base_cursos}3/', headers=headers)
 
-resultado = request.put(url=f'{url_base_cursos}3/', headers=headers, data=curso_atualizado)
+resultado = requests.put(url=f'{url_base_cursos}3/', headers=headers, data=curso_atualizado)
 
 # Testando o código de status HTTP
 assert resultado.status_code == 200

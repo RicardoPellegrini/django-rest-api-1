@@ -11,7 +11,7 @@ novo_curso = {
   "url": "http://www.geek.com.br/scrum"
 }
 
-resultado = request.post(url=url_base_cursos, headers=headers, data=novo_curso)
+resultado = requests.post(url=url_base_cursos, headers=headers, data=novo_curso)
 
 # Testando o código de status HTTP 201
 assert resultado.status_code == 201
